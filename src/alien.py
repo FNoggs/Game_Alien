@@ -15,7 +15,7 @@ class Alien(Sprite):
         self.image = pygame.image.load("../images/alien.bmp")
         self.rect = self.image.get_rect()
 
-        # Inicia cada novo alienígena próximo à parte superior esquerda da tela
+        # Inicia cada novo alienígena próxicdmo à parte superior esquerda da tela
         self.rect.x = self.rect.width
         self.rect.y = self.rect.height
 
