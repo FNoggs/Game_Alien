@@ -1,6 +1,10 @@
 from normal import DescontoNormal
 from vip import DescontoVip
 from premium import DescontoPremium
+from absdesc import Desconto
+
+def aplicar_desconto(desconto: Desconto, valor:float):
+    return desconto.calcular(valor)
 
 def main():
 
@@ -9,9 +13,9 @@ def main():
     desconto_vip = DescontoVip()
     desconto_premium = DescontoPremium()
 
-    print(f"Desconto Normal: {desconto_normal.calcular(valor):.2f}")
-    print(f"Desconto : {desconto_vip.calcular(valor):.2f}")
-    print(f"Desconto Premium: {desconto_premium.calcular(valor):.2f}")
+    print(f"Desconto Normal: {aplicar_desconto(desconto_normal, valor):.2f}")
+    print(f"Desconto Vip: {aplicar_desconto(desconto_vip, valor):.2f}")
+    print(f"Desconto Premium: {aplicar_desconto(desconto_premium, valor):.2f}")
 
 if __name__ == "__main__":
     main() 
