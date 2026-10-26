@@ -210,3 +210,7 @@ __marimo__/
 .sqlite3
 
 
+htmlcov/
+.coverage
+relatorio.html
+.pytest_cache/
