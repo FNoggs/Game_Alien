@@ -1,4 +1,4 @@
-from interfaces import IDesconto, ICupom, IVIP
+from src.desconto.interfaces import IDesconto, ICupom, IVIP
 
 class DescontoNormal(IDesconto):
     def calcular(self, valor: float) -> float:

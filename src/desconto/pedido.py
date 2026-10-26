@@ -1,4 +1,4 @@
-from interfaces import IDesconto
+from src.desconto.interfaces import IDesconto
 
 class Pedido:
     def __init__(self, desconto: IDesconto):
